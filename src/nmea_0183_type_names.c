@@ -3,7 +3,7 @@
 //
 
 #include "tiny_nmea/nmea_0183_type_names.h"
-#include "../inc/tiny_nmea/internal/nmea_0183_types.h"
+#include "tiny_nmea/internal/nmea_0183_types.h"
 
 // _name are human-readable functions
 // maybe wrap with a ifdef to only include for debug builds?

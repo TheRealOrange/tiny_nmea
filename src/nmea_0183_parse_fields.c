@@ -2,7 +2,7 @@
 // Created by Lin Yicheng on 2/1/26.
 //
 
-#include "../inc/tiny_nmea/internal/nmea_0183_types.h"
+#include "tiny_nmea/internal/nmea_0183_types.h"
 
 tiny_nmea_constellation_t parse_constellation(const char *s) {
   switch (NMEA_HASH2(s[0], s[1])) {

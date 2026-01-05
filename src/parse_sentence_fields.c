@@ -3,7 +3,7 @@
 //
 
 #include "tiny_nmea/internal/parse_sentence_fields.h"
-#include "../inc/tiny_nmea/internal/data_formats.h"
+#include "tiny_nmea/internal/data_formats.h"
 
 #include <string.h>
 #include <stdint.h>

@@ -2,8 +2,14 @@
 // Created by linyi on 1/4/2026.
 //
 
-#include "tiny_nmea/internal/sats_tracking_handler.h"
+#include "tiny_nmea/internal/config.h"
 
+#ifdef TINY_NMEA_ENABLE_SAT_TRACKER
+
+#include "tiny_nmea/internal/sats_tracking_handler.h"
+#include "tiny_nmea/internal/data_formats.h"
+
+#include <stdint.h>
 #include <string.h>
 
 static const int64_t DAY_IN_MS = 86400000;
@@ -314,3 +320,5 @@ tiny_nmea_res_t tiny_nmea_sat_tracking_update_gsa(tiny_nmea_sats_tracker_ctx_t *
 
   return TINY_NMEA_OK;
 }
+
+#endif

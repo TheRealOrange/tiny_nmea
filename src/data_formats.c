@@ -2,7 +2,7 @@
 // Created by dst on 12/29/25.
 //
 
-#include "../inc/tiny_nmea/internal/data_formats.h"
+#include "tiny_nmea/internal/data_formats.h"
 
 double tiny_nmea_coord_to_degrees(const tiny_nmea_coord_t *coord) {
     if (coord->hemisphere == '\0' || coord->raw.scale == 0) {

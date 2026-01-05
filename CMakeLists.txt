@@ -1,10 +1,6 @@
 cmake_minimum_required(VERSION 3.14)
 project(tiny_nmea VERSION 0.1.0 LANGUAGES C)
 
-set(CMAKE_C_STANDARD 11)
-set(CMAKE_C_STANDARD_REQUIRED ON)
-set(CMAKE_C_EXTENSIONS OFF)
-
 # only set C standard when building standalone
 if(PROJECT_IS_TOP_LEVEL)
     set(CMAKE_C_STANDARD 11)

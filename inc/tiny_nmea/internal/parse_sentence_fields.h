@@ -5,6 +5,7 @@
 #ifndef TINY_NMEA_PARSE_DATA_TYPES_H
 #define TINY_NMEA_PARSE_DATA_TYPES_H
 
+#include <stddef.h>
 #include <stdint.h>
 
 #include "data_formats.h"

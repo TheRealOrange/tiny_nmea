@@ -2,7 +2,7 @@
 // Created by dst on 12/29/25.
 //
 
-#include "../inc/tiny_nmea/internal/fixed_point.h"
+#include "tiny_nmea/internal/fixed_point.h"
 
 float tiny_nmea_to_float(const tiny_nmea_float_t *f) {
   if (!tiny_nmea_float_valid(f)) return 0.0f;

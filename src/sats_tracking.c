@@ -2,7 +2,12 @@
 // Created by linyi on 1/4/2026.
 //
 
+#include "tiny_nmea/internal/config.h"
+
+#ifdef TINY_NMEA_ENABLE_SAT_TRACKER
+
 #include "tiny_nmea/sats_tracking.h"
+#include "tiny_nmea/internal/nmea_0183_types.h"
 #include "tiny_nmea/internal/sats_tracking_handler.h"
 
 #include <string.h>
@@ -87,3 +92,5 @@ tiny_nmea_res_t tiny_nmea_sat_tracking_update_sentence(tiny_nmea_sats_tracker_ct
 
   return ret;
 }
+
+#endif
